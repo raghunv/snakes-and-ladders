@@ -143,7 +143,10 @@ void Board::update_board(Player& player_moving, Player& player_idle)
 
         //reinsert idle player position
         array_pos = player_idle.get_array_position();
-        board[array_pos][2] = 444;
+        if (array_pos != 0)
+        {
+            board[array_pos][2] = 444;
+        }
     }
     else
     {
