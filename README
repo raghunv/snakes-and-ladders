@@ -1,7 +1,6 @@
-Sam Nunnery
-
-Math 410 - Intro Project
-
-Snakes and Ladders
-
-Written in C++
+Snakes and Ladders in C++ with a 10x10 board
+Written by Sam Nunnery
+Math 410 - intro project
+Tested on Windows 7 64 bit using Codeblocks
+Uses a WINDOWS header for handling color
+Last Updated: 1/29/2013
