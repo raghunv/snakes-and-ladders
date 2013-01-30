@@ -6,7 +6,6 @@ class Board
 {
     public:
         void print_board();
-        void set_board();
         void reset_board();
         void update_board(Player& player_moving, Player& player_idle);
 
