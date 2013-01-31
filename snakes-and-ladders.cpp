@@ -30,9 +30,26 @@ int main()
     Player p1(1);
     Player p2(2);
 
+    //Show start screen and rules
+    cout << "Welcome to Snakes and Ladders" << endl;
+    cout << endl << "Rules: " << endl;
+    cout << endl << "Roll the dice and advance position on the board. " << endl;
+    cout << endl << "If a player rolls a 6, they get to roll again. " << endl;
+    cout << endl << "If a player rolls 3 6's in a row, they are moved back to the beginning of the board. " << endl;
+    cout << endl << "If a player lands on the bottom of a ladder [ L ], they are transported to the top of it. " << endl;
+    cout << endl << "If a player lands on the top of a snake [ S ], they are transported to the bottom of it. " << endl;
+    cout << endl << "Once a player reaches tile 100, the game is over. " << endl;
+    cout << endl << "You do not have to roll the exact amount to land on 100 in this version." << endl;
+    cout << endl << "Enter 1 to start the game" << endl;
+    cin >> dice_roll;
+
+    //Clear Screen
+    system("CLS");
+
     //Start Game - Run while there is no winner
     while (running)
     {
+
         //Show board
         game_board.print_board();
 
